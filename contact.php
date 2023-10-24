@@ -2,8 +2,6 @@
 <?php require_once 'layout/header.php';?>
 
 
-<script src ="/js/starwars.js"></script>
-
 <div class="container " >
     <div class="row"> 
     
@@ -15,10 +13,8 @@
 <div class="col-lg-4 ">
             <div class=" mb-3">
 
-            <div class="starwars-demo">
-    <img src="img/10.jpg" alt="Star" class="star" height="80px" width="80px">
-    <img src="img/10.jpg" alt="Wars" class="wars" height="80px" width="80px">
-    <h2 class="byline" id="byline">Contactez-nous</h2>
+            
+    <h2 >Contactez-nous</h2>
   </div>
 
             </div>
