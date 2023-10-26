@@ -4,10 +4,9 @@ require_once __DIR__ . "/../layout/header.php";
 
 
 ?>
-<!-- <link rel="stylesheet" type="text/css" href="/css/style.css" /> -->
-
+<div class="container">
   
-<form>
+<form class= "align-self-center">
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -23,6 +22,7 @@ require_once __DIR__ . "/../layout/header.php";
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
 
 <?php require_once '../layout/footer.php';
 ?>
