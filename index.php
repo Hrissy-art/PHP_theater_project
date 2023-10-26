@@ -2,7 +2,6 @@
 
 $pdo = getConnection();
 
-var_dump($pdo);
 
 // Soit un PDOStatement, soit false
 $stmt = $pdo->query("SELECT * FROM show_actuality");
