@@ -14,7 +14,7 @@ if (isset($_GET['id_show'])) {
 
     if ($imageDetails) {
         // Affichez l'image en taille réelle
-        echo '<img src="' . $imageDetails['image'] . '" alt="Image en taille réelle">';
+        echo '<img src="img/'. $imageDetails['image'] . '" alt="Image en taille réelle">';
     } else {
         echo 'Image non trouvée.';
     }

@@ -26,7 +26,7 @@ require_once 'table-shows.php';
         ?>
             <div class="col-md-4 col-sm-6">
                 <a href="image_details.php?id_show=<?php echo $row['id_show']; ?>">
-                    <img src="<?php echo $row['image']; ?>" class="card-img-top" alt="Show Image">
+                    <img src="img/<?php echo $row['image']; ?>" class="card-img-top" alt="Show Image">
                 </a>
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $row['title']; ?></h5>
