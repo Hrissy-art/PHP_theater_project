@@ -1,7 +1,7 @@
 
 <?php require_once 'functions/db.php';
 require_once 'layout/header.php';
-require_once 'table-shows.php';
+
 ?>
 
 <div class="container-fluid main-pic">
