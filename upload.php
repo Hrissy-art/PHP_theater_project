@@ -1,9 +1,9 @@
 
 
 <?php
-require_once __DIR__ . '/../classes/AppError.php';
-require_once __DIR__ . '/../classes/Utils.php';
-require_once __DIR__ . '/../functions/db.php';
+require_once __DIR__ . '/classes/AppError.php';
+require_once __DIR__ . '/classes/Utils.php';
+require_once __DIR__ . '/functions/db.php';
 
 try {
     $pdo = getConnection();

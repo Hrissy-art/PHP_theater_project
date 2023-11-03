@@ -40,6 +40,8 @@ require_once __DIR__ . "/../layout/header.php";
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-6 mt-5">
+                    <div><img src="/img/actor.jpg" class="img-fluid" alt="actor" height="50px" /></div>
             </div>
         </div>
     </section>

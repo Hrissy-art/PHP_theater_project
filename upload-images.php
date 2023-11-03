@@ -1,5 +1,5 @@
-<?php require_once __DIR__ . '/../functions/db.php';
-require_once __DIR__ . '/../layout/header.php';
+<?php require_once __DIR__ . '/functions/db.php';
+require_once __DIR__ . '/layout/header.php';
 ?>
 <div class="container">
     <h2>Formulaire d'ajout d'actualités</h2>
@@ -25,5 +25,5 @@ require_once __DIR__ . '/../layout/header.php';
 </div>
 
 <?php
-require_once __DIR__ . '/../layout/footer.php';
+require_once __DIR__ . '/layout/footer.php';
 ?>

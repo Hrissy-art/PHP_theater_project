@@ -3,6 +3,7 @@ require_once __DIR__ . "/../layout/header.php";
 
 ?>
 <div class="container">
+  <div>
   
 <form class= "align-self-center" action="sign-up-process.php" method="POST">
   <div class="form-group">
