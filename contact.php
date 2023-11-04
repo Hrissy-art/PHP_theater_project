@@ -14,27 +14,30 @@
             <div class=" mb-3">
 
             
-    <h2 >Contactez-nous</h2>
+    <h2 class="contact-title" >Contactez-nous</h2>
   </div>
 
             </div>
             
             <div class="col-lg-4 ">
             <div class=" mb-3">
-              <form id="contactForm">
-                <label for="name">Nom:</label><br />
-                <input type="text" id="name" name="name" value="" placeholder="Nom" /><br />
-                <label for="email"> Email:</label><br />
-                <input type="email" id="email" name="email" value="" placeholder="e-mail" /><br /><br />
-                <label for="message"> Message:</label><br />
-                <textarea id="message" name="message" placeholder="Message"></textarea>
-              </form>
-              <input type="submit" value="Envoyer" />
-              </div>
+            <form action="contact-process.php" method="post">
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send">
+    </form>
           </div>
             </div>
           </div>
-
+          
+    
           </section>
 
 
