@@ -26,22 +26,22 @@ require_once __DIR__ . "/../layout/header.php";
                                     <input type="email" name="email" id="email" class="form-control" placeholder="name@company.com" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="password" class="form-label">Mot de passe</label>
+                                    <label for="password" class="form-label">Password</label>
                                     <input type="password" name="password" id="password" class="form-control" placeholder="••••••••" required>
                                 </div>
                                 <div class="mb-3 text-end">
                                     <a href="#" class="text-primary">Mot de passe oublié ?</a>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Connexion</button>
+                                <button type="submit" class="btn btn-dark">Log in</button>
                                 <p class="mt-3 text-secondary">
-                                    Pas encore inscrit ? <a href="#" class="text-primary">Inscription</a>
+                                    Don't have an account yet? <a href="sign-up.php" class="text-primary">Sign up</a>
                                 </p>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-5">
-                    <div><img src="/img/actor.jpg" class="img-fluid" alt="actor" height="50px" /></div>
+                    <div><img src="/img/actor-little.jpg" class="img-fluid" alt="actor" height="30px" /></div>
             </div>
         </div>
     </section>

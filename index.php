@@ -14,8 +14,9 @@ require_once 'layout/header.php';
 <div class="row m-5">
 <div class="col-md-4 col-sm-6 p-5 m-5 about_text">
     <h2>About</h2>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quisquam eius rerum aperiam, doloribus, consequuntur delectus commodi aut ipsum aliquid quos, laborum recusandae corporis. Tenetur hic sequi dolore magni id!
+   <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quisquam eius rerum aperiam, doloribus, consequuntur delectus commodi aut ipsum aliquid quos, laborum recusandae corporis. Tenetur hic sequi dolore magni id!
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam qui possimus deleniti hic, veniam alias officiis, exercitationem repellendus nemo eum inventore architecto maxime vel explicabo cupiditate debitis voluptate voluptatibus accusantium quo sunt quia commodi culpa. Aliquid veritatis reprehenderit molestias, dignissimos quaerat quia alias quasi id vel consequuntur eveniet expedita maiores aspernatur! Voluptatibus, expedita voluptate. Obcaecati dolor deleniti necessitatibus error ipsa!
+    </p>
     
 </div>
 
@@ -30,7 +31,7 @@ require_once 'layout/header.php';
     <div class="row m-5">
         <?php
         $pdo = getConnection();
-        $stmt = $pdo->query("SELECT * FROM show_actuality");
+        $stmt = $pdo->query("SELECT * FROM show_actuality LIMIT 3");
 
         if ($stmt === false) {
             echo "Erreur lors de la requête";
@@ -46,6 +47,7 @@ require_once 'layout/header.php';
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $row['title']; ?></h5>
                     <p class="card-text"><?php echo $row['texte']; ?></p>
+                    <p class="card-text"><?php echo $row['date_actu']; ?></p>
                 </div>
             </div>
         <?php

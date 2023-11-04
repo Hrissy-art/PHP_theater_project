@@ -16,10 +16,10 @@
                 <a class="nav-link active" aria-current="page" href="/contact.php">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/admin/sign-up.php">Inscription</a>
+                <a class="nav-link active" aria-current="page" href="/admin/sign-up.php">Sign up</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/admin/login.php">Connexion</a>
+                <a class="nav-link active" aria-current="page" href="/admin/login.php">Log in</a>
               </li>
           
             </ul>

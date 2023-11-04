@@ -40,10 +40,10 @@ h2
     { color: white; font-family: 'Courier New', Courier, monospace; font-size: 80px; font-weight: 400; line-height: 32px; margin: 0 0 24px; 
 }
 
-p{
+/* p{
      color: whitesmoke; font-family: 'Source Sans Pro', sans-serif; font-size: 18px; line-height: 32px; margin: 0 0 24px; 
 
-}
+} */
 
 .par1 {
     background-color:#151a1d;
@@ -134,5 +134,37 @@ background-color: #508AA8;
 
 form {
   width: 50%;
+}
+
+/*sign up*/
+
+.reg-form {
+ 
+background-image: url('/img/boy.jpg');
+background-size: cover;
+
+}
+
+.reg-template {
+  background-color: rgb(134, 151, 151);
+  opacity: 75%;
+}
+
+/*actuality*/
+
+.actuality-par {
+  color: black;
+}
+
+.actu-par {
+  color: whitesmoke;
+}
+
+/*image details*/
+
+.details-par {
+  background-color:whitesmoke;
+  width: 50%;
+  align-items: center;
 }
 
