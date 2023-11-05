@@ -23,7 +23,7 @@ try {
 }
 
 
-$query = "SELECT * FROM admin_author WHERE email = ?";
+$query = "SELECT * FROM users WHERE email = ?";
 
 $connectStmt = $pdo->prepare($query);
 $connectStmt->execute([$email]);
@@ -45,4 +45,4 @@ $_SESSION['userInfos'] = [
     'email' => $email
 ];
 
-Utils::redirect('welcome-page.php');
+Utils::redirect('index.php');

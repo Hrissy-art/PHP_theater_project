@@ -7,7 +7,7 @@ require_once 'layout/header.php';
 <div class="container main-pic">
     <img src="img/ballet_grand.jpg" class="img-fluid img-principal" alt="theater hall" />
     <div class="centered">
-        <h1 class="font-sans-serif animate-character font-italic">HERE</h1>
+        <h1 class="font-sans-serif animate-character font-italic index-title">HERE</h1>
     </div>
 </div>
 <div class="container-fluid presentation">

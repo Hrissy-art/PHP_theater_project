@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid navigation">
-          <a class="navbar-brand" href="#"><img src="/img/10.jpg"  class="img-fluid" alt="logo" height="50px" width="50px"></a>
+          <a class="navbar-brand" href="#"><img src="/img/10.jpg"  class="img-fluid logo" alt="logo" height="50px" width="50px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -13,13 +13,13 @@
                 <a class="nav-link active" aria-current="page" href="/actualites.php">Actualities</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/contact.php">Contact</a>
+                <a class="nav-link active" aria-current="page" href="/user/contact.php">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/admin/sign-up.php">Sign up</a>
+                <a class="nav-link active" aria-current="page" href="/user/sign-up.php">Sign up</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/admin/login.php">Log in</a>
+                <a class="nav-link active" aria-current="page" href="/user/login.php">Log in</a>
               </li>
           
             </ul>

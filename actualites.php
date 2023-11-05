@@ -64,7 +64,7 @@ require_once __DIR__ . '/functions/db.php';
     <div class="col-lg-6 ">
       <div class=" m-4">
   <p>
-  <img src="img/woman-small.jpg"  class="img-fluid img-contact" alt="chairs" />
+  <img src="img/masque.jpg"  class="img-fluid img-contact" alt="chairs" />
   </p>
      </div>
      </div>

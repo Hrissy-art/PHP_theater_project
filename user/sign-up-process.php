@@ -18,7 +18,7 @@ try {
 
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-    $query = "INSERT INTO admin_author(`first_name`, `last_name`, `email`, `password`) VALUES (:first_name, :last_name, :email, :hashedPassword)";
+    $query = "INSERT INTO users(`first_name`, `last_name`, `email`, `password`) VALUES (:first_name, :last_name, :email, :hashedPassword)";
     $stmtInsert = $pdo->prepare($query);
     $stmtInsert->execute([
         'first_name' => $firstname,
@@ -26,8 +26,9 @@ try {
         'email' => $email,
         'hashedPassword' => $hashedPassword
     ]);
+   
+    echo  '<p class= style="background-color: #4CAF50; color: white; padding: 10px; text-align: center;">You have been registrated</p>';
 
-    echo "Inscription effectuée";
 } catch (PDOException) {
     Utils::redirect('sign-up.php?error=' . AppError::DB_CONNECTION);
 }

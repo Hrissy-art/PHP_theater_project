@@ -1,8 +1,8 @@
 <?php
 
-require_once  __DIR__ ."/classes/AppError.php";
-require_once  __DIR__ ."/classes/Utils.php";
-require_once  __DIR__ ."/functions/db.php";
+require_once  __DIR__ ."/../classes/AppError.php";
+require_once  __DIR__ ."/../classes/Utils.php";
+require_once  __DIR__ ."/../functions/db.php";
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     Utils::redirect('contact.php');

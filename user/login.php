@@ -7,7 +7,7 @@ require_once __DIR__ . "/../layout/header.php";
 <section>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6 mt-5">
+                <div class="col-lg-4 mt-5">
                     <div class="text-center">
                        
                         <?php if (isset($_SESSION['loginErrorMessage'])) { ?>
@@ -17,9 +17,9 @@ require_once __DIR__ . "/../layout/header.php";
                         <?php
                             unset($_SESSION["loginErrorMessage"]);
                         } ?>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
+                    
+                    
+                        <div class="card-body login-form">
                             <form action="login-process.php" method="POST">
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email</label>
@@ -39,7 +39,7 @@ require_once __DIR__ . "/../layout/header.php";
                             </form>
                         </div>
                     </div>
-                </div>
+                
                 <div class="col-lg-6 mt-5">
                     <div><img src="/img/actor-little.jpg" class="img-fluid" alt="actor" height="30px" /></div>
             </div>
