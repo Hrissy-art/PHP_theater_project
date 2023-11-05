@@ -8,7 +8,7 @@ require_once __DIR__ . '/functions/db.php';
 // try {
     $pdo = getConnection();
 
-    $stmt = $pdo->query("SELECT id_show, title, texte, date_actu FROM show_actuality");
+    $stmt = $pdo->query("SELECT id_show, title, image, texte, date_actu FROM show_actuality");
    
 while ($shows = $stmt->fetch()) {
     ?>
@@ -17,6 +17,7 @@ while ($shows = $stmt->fetch()) {
         <h3><?php echo $shows['title']; ?></h3>
         <p><?php echo $shows['texte']; ?></p>
         <p><?php echo $shows['date_actu']; ?></p>
+        <p><?php echo $shows['image']; ?></p>
     </div>
     <?php
 }

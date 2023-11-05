@@ -17,10 +17,18 @@ if (isset($_GET['id_show'])) {
     ?>
 
 <h1 class="update-title">Update </h1>
-<form action = "update-show-process.php" method="POST">
+<form action = "update-show-process.php" method="POST" enctype="multipart/form-data">
 <div class="form-group">
     <label for="text">Title</label>
     <input type="text" class="form-control" id="title"  name="title" value = "<?php echo $shows['title']; ?>"/>
+  </div>
+  <div class="form-group">
+    <label for="image">Img</label>
+   
+
+    <input type="file" class="form-control" id="image"  name="new_image"
+    value = "<?php echo $shows['image']; ?>"/>
+   
   </div>
   <div class="form-group">
     <label for="text">Description</label>
@@ -32,6 +40,7 @@ if (isset($_GET['id_show'])) {
     <input type="date" class="form-control" id="date"  name="date_actu"
     value = "<?php echo $shows['date_actu']; ?>"/>
   </div>
+  
   <input type="hidden"  name="id_show"
     value = "<?php echo $shows['id_show']; ?>"/>
   <button type="submit" class="btn btn-dark">Modify</button>
