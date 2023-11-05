@@ -7,14 +7,14 @@ require_once __DIR__ . '/functions/db.php';
 
 $pdo = getConnection();
 
-
+if (isset($_GET['id_show'])) {
     $id_show = $_GET['id_show'];
 
     $showStmt = $pdo->prepare("SELECT * FROM show_actuality WHERE id_show = :id_show");
     $showStmt->execute(['id_show' => $id_show]);
     $shows = $showStmt->fetch();
 
-?>
+    ?>
 
 <h1 class="update-title">Update </h1>
 <form action = "update-show-process.php" method="POST">
@@ -37,6 +37,10 @@ $pdo = getConnection();
   <button type="submit" class="btn btn-dark">Modify</button>
 </form>
 <?php
+}
+else {
+  echo 'Show not found.';
+} 
 
 require_once __DIR__ . '/layout/footer.php';
 ?>
