@@ -24,10 +24,14 @@
           
           <div class="col-lg-8"> <!-- On copie ça le nombre de fois ou on a besoin -->
             <div class="mt-4">
-                <ul class="d-flex justify-content-center"><oi>PLAN DU SITE |</oi>
-                <oi>MENTIONS LEGALES |</oi>
-                <oi>GESTION DES COOKIES |</oi>
-                <oi>CONNEXION |</oi>
+             
+ 
+                <ul class="d-flex justify-content-center"><ol>SITE MAP |</ol>
+                <ol>LEGAL NOTICE |</ol>
+                <ol>COOKIE MANAGEMENT |</ol>
+                <ol class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/user/sign-up.php">Sign up</a>
+              </ol>
               </ul>
                 <p class="text-center">Creation Lorem-Ipsun</p>
             </div>
