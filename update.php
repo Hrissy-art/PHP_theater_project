@@ -8,15 +8,18 @@ require_once __DIR__ . '/functions/db.php';
 // try {
     $pdo = getConnection();
 
-    $stmt = $pdo->query("SELECT id_user, email FROM users");
+    $stmt = $pdo->query("SELECT id_show, title, texte, date_actu FROM show_actuality");
    
-while ($users = $stmt->fetch()) {
+while ($shows = $stmt->fetch()) {
     ?>
-            <div class="col-md-4 col-sm-6">
-                <a href="update-user.php?id=<?php echo $users["id_user"];?>">Update</a>
-                <?php echo $users['email']; ?>
-                    
-        </div> 
-        <?php } ?>
+    <div class="col-md-4 col-sm-6">
+        <a href="update-show.php?id_show=<?php echo $shows["id_show"];?>">Update</a>
+        <h3><?php echo $shows['title']; ?></h3>
+        <p><?php echo $shows['texte']; ?></p>
+        <p><?php echo $shows['date_actu']; ?></p>
+    </div>
+    <?php
+}
+?>
 
         <?php  require_once __DIR__ . '/layout/footer.php';

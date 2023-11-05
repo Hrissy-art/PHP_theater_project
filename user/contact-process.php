@@ -31,7 +31,7 @@ try {
 
     // Exécutez la requête d'insertion
     if ($stmt->execute()) {
-        echo 'Votre message a été enregistré avec succès dans la base de données.';
+        echo 'Your message has been sent.';
     } else {
         echo 'Erreur';
     }
