@@ -53,7 +53,7 @@ require_once __DIR__ . '/functions/db.php';
     <div class= "container par1">
   <div class="row"> 
     <div class="col-lg-6 ">
-      <div class=" m-4  border p-5 mb-2 border-opacity-75 rounded-5">
+      <div class=" m-4  p-5 mb-2 border-opacity-75 rounded-5">
 <p class="actu-par">
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident vero perferendis nihil impedit! Magni recusandae libero minima qui hic vero unde repellat? Sequi voluptatum consequuntur debitis perferendis. Voluptate, recusandae quidem.
     Quae ullam sapiente quia velit soluta repudiandae iste explicabo recusandae error dolore expedita dicta vel et temporibus enim suscipit voluptatibus, corrupti optio veniam voluptatum quod esse! Voluptate, ut? Sint, minima!

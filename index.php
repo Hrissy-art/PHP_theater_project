@@ -29,7 +29,7 @@ require_once 'layout/header.php';
 
 <div class="container">
     <div class="row m-5">
-        <?php
+    <?php
         $pdo = getConnection();
         $stmt = $pdo->query("SELECT * FROM show_actuality LIMIT 3");
 
@@ -55,4 +55,6 @@ require_once 'layout/header.php';
         ?>
     </div>
 </div>
-<?php require_once 'layout/footer.php';
+<?php
+
+require_once 'layout/footer.php';

@@ -12,6 +12,9 @@ require_once __DIR__ . '/functions/db.php';
 ] = $_POST;
 
 $pdo = getConnection();
+
+//je vérifie si l'image existe, qu'il n'y a pas d'erreur pendant l'upload. 
+
 if (isset($_FILES['new_image']) && $_FILES['new_image']['error'] === UPLOAD_ERR_OK) {
     $newImage = $_FILES['new_image'];
     $newImageFilename = $newImage['name'];
