@@ -2,9 +2,9 @@
 
 session_start();
 
-require_once  __DIR__ ."/../classes/AppError.php";
-require_once  __DIR__ ."/../classes/Utils.php";
-require_once  __DIR__ ."/../functions/db.php";
+require_once  __DIR__ .'/../classes/AppError.php';
+require_once  __DIR__ .'/../classes/Utils.php';
+require_once  __DIR__ .'/../functions/db.php';
 
 if (!isset($_POST['email']) || !isset($_POST['password'])) {
     Utils::redirect('login.php');
@@ -45,4 +45,4 @@ $_SESSION['userInfos'] = [
     'email' => $email
 ];
 
-Utils::redirect('index.php');
+Utils::redirect('profile.php');

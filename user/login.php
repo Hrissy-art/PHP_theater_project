@@ -29,9 +29,7 @@ require_once __DIR__ . "/../layout/header.php";
                                     <label for="password" class="form-label">Password</label>
                                     <input type="password" name="password" id="password" class="form-control" placeholder="••••••••" required>
                                 </div>
-                                <div class="mb-3 text-end">
-                                    <a href="#" class="text-primary">Mot de passe oublié ?</a>
-                                </div>
+                                
                                 <button type="submit" class="btn btn-dark">Log in</button>
                                 <p class="mt-3 text-secondary">
                                     Don't have an account yet? <a href="sign-up.php" class="text-primary">Sign up</a>

@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid navigation">
           <a class="navbar-brand" href="#"><img src="/img/10.jpg"  class="img-fluid logo" alt="logo" height="50px" width="50px"></a>
@@ -15,14 +19,22 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/user/contact.php">Contact</a>
               </li>
-              <li class="nav-item">
+              <?php if (isset($_SESSION['userInfos'])) { ?>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/user/logout.php">Log out</a>
+        </li>
+    <?php } else { ?>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/user/login.php">Log in</a>
+        </li>
+        <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/user/sign-up.php">Sign up</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/user/login.php">Log in</a>
-              </li>
-          
-            </ul>
+    <?php } ?>
+</ul>
+
+
+
            
             <form class="d-flex" method="GET" action="search-object.php">
               <input class="form-control me-2" name= search type="search" placeholder="Search" aria-label="Search" required name="q">
