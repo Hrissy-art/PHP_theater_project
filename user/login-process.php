@@ -33,10 +33,12 @@ $admin = $connectStmt->fetch();
 
 if ($admin === false) {
     Utils::redirect('login.php?error=' . AppError::USER_NOT_FOUND);
+    echo'User not found';
 }
 
 if (!password_verify($password, $admin['password'])) {
     Utils::redirect('login.php?error=' . AppError::INVALID_CREDENTIALS);
+    echo'User not found';
 }
 
 

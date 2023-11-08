@@ -5,7 +5,7 @@ require_once __DIR__ . '/layout/header.php';
 <!-- Création du formulaire pour l'insertion de nouvelles données -->
 <div class="container">
     
-    <h2>Formulaire d'ajout d'actualités</h2>
+    <h2 class="upload-title">News add form</h2>
     <form action="upload.php" method="POST" enctype="multipart/form-data">
         <div class="form-group">
             <label for="title">Titre</label>

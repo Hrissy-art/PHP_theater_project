@@ -41,6 +41,7 @@ Le troisième fichier relatif à l’update traite la requête d’upload justem
 Dans le dossier « user » j’ai les requêtes concernant l’interaction de l’utilisateur avec 
 Mon interface. 
 ###	La connexion de l’utilisateur 
+###	La déconnexion de l’utilisateur
 ###	La création d’un compte de l’utilisateur 
 ###	Le contact – j’ai créé deux classes :
 ContactForm et ContactData – gère l’insertion des données 

@@ -1,7 +1,4 @@
-<?php
-session_start();
-
-?>
+<!-- <?php session_start();?> -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid navigation">
           <a class="navbar-brand" href="#"><img src="/img/10.jpg"  class="img-fluid logo" alt="logo" height="50px" width="50px"></a>
@@ -22,6 +19,9 @@ session_start();
               <?php if (isset($_SESSION['userInfos'])) { ?>
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/user/logout.php">Log out</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/user/profile.php">My profil</a>
         </li>
     <?php } else { ?>
         <li class="nav-item">

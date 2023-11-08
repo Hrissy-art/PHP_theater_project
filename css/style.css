@@ -280,3 +280,19 @@ textarea {
 .update-title {
   color: black;
 }
+
+/*upload*/
+.upload-title {
+
+  color: #151a1d;
+  font-size: 34px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+/*profil*/
+
+.profil-info { 
+  background-image:  url('/img/mime.jpg');
+
+  
+}
