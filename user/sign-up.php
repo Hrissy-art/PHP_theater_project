@@ -37,7 +37,7 @@ require_once __DIR__ . "/../layout/header.php";
 </form>
 </div>
 <div class="col-lg-6 mt-5">
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis quaerat minima distinctio fugit quam, unde asperiores recusandae non delectus temporibus odio. Placeat molestiae modi illo quam aliquid nobis delectus ut?
+
 </div>
 </div>
 

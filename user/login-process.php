@@ -44,10 +44,12 @@ if (!password_verify($password, $admin['password'])) {
 }
 
 // si la vérification est réussie la session de l'utilisateur est ouverte 
+// Je stocke les informations relatives à l'utilisateur dans la variable $_SESSION
 
 $_SESSION['userInfos'] = [
     'id' => $admin['id'],
-    'email' => $email
+    'email' => $email,
+    'first_name' => $admin['first_name']
 ];
 
 Utils::redirect('profile.php');

@@ -15,9 +15,9 @@ class ContactData {
 
     public function insertContact($name, $email, $message) {
         $stmt = $this->pdo->prepare("INSERT INTO contact (name, email, message) VALUES (:name, :email, :message)");
-        $stmt->bindParam(':name', $name, PDO::PARAM_STR);
-        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
-        $stmt->bindParam(':message', $message, PDO::PARAM_STR);
+        $stmt->bindValue(':name', $name, PDO::PARAM_STR);
+        $stmt->bindValue(':email', $email, PDO::PARAM_STR);
+        $stmt->bindValue(':message', $message, PDO::PARAM_STR);
         return $stmt->execute();
     }
 }

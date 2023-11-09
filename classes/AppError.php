@@ -9,4 +9,6 @@ class AppError
     public const USER_NOT_FOUND = 4;
     public const REGISTER_FILE_UPLOAD = 5;
 
+    public const USER_ALREADY_EXISTS = 6;
+
 }
