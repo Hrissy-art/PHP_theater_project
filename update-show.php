@@ -15,7 +15,7 @@ if (isset($_GET['id_show'])) {
     $shows = $showStmt->fetch();
 
     ?>
-
+<!-- Création du formulaire pour la mise à jour des éléments -->
 <h1 class="update-title">Update </h1>
 <form action = "update-show-process.php" method="POST" enctype="multipart/form-data">
 <div class="form-group">

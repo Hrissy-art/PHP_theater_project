@@ -5,7 +5,9 @@ require_once __DIR__ . '/classes/AppError.php';
 require_once __DIR__ . '/classes/Utils.php';
 require_once __DIR__ . '/functions/db.php';
 
-// try {
+// Je récupère le contenu de ma table à l'aide d'un SELECT //
+
+
     $pdo = getConnection();
 
     $stmt = $pdo->query("SELECT id_show, title, image, texte, date_actu FROM show_actuality");

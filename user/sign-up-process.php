@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 try {
     $pdo = getConnection();
-
+// je récupère les données du formulaire 
     $firstname = $_POST['first_name'];
     $lastname = $_POST['last_name'];
     $email = $_POST['email'];
@@ -17,7 +17,7 @@ try {
     $confirmPassword = $_POST['confirm-password'];
 
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-
+//  j'insère les données dans la table prévue à cet effet 
     $query = "INSERT INTO users(`first_name`, `last_name`, `email`, `password`) VALUES (:first_name, :last_name, :email, :hashedPassword)";
     $stmtInsert = $pdo->prepare($query);
     $stmtInsert->execute([

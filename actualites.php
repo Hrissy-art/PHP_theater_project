@@ -22,7 +22,7 @@ require_once __DIR__ . '/functions/db.php';
 
     while ($row = $stmt->fetch()) {
     ?>
-
+<!-- création d'un caroussel à l'aide de javascript  -->
 <a href="image_details.php?id_show=<?php echo $row['id_show']; ?>">
             <img class="owl-lazy img-fluid" data-src="img/<?php echo $row['image']; ?>" alt="artists-playing">
             <p class="card-text actuality-par"><?php echo $row['title']; ?></p>

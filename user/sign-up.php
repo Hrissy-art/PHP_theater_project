@@ -2,6 +2,8 @@
 require_once __DIR__ . "/../layout/header.php";
 
 ?>
+
+<!-- Création du formulaire permettant la création d'un compte utilisateur -->
 <div class="container reg-form ">
   <div class= "row">
   <div class="col-lg-6 mt-5">

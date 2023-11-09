@@ -35,7 +35,7 @@ if (isset($_GET['id_show'])) {
         echo '<p>Date : ' . $imageDetails['date_actu'] . '</p>';
         echo '<p class="details-par"> A propos:'. " " . $imageDetails['texte'] . '</p>';
 
-        // Ici j'effectue une requête pour récupérer le nom du théâtre lié à cette image
+        // Ici j'effectue une requête pour récupérer le nom du théâtre lié au spectacle
         $stmtTheater = $pdo->prepare("SELECT t.name
                                       FROM show_actuality sa
                                       INNER JOIN show_actuality_theater sat ON sa.id_show = sat.id_show
