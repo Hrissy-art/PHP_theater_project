@@ -1,22 +1,24 @@
 # PHP_theater_project
 
-Draft ** / Brouillon **
+ ## Brouillon ** Draft ** 
+
+Projet en cours: Site Web concernant l'actualité de théâtre dans l'agglomération lyonnaise. 
 Ongoing Project: Website on Theatre News in Lyon.
 
+Exercice backend 
 Backend Exercise for Admin-Side Query Implementation
 
-2 branches:
+## Décsription 
+Mon dossier contient deux branches.
+Une branche "main" sur laquelle j'ai choisi d'afficher du contenu via des objets afin de m'entrainer.
+Une branche "request" qui constitue  le coeur de mon projet sur laquelle je gère plusieurs élements à l'aide de requêtes. La partie FRONT de cette branche est plus avancée et élaborée. 
+
 - "requests" - display elements by query requests 
 - "main"  - display elements by objects loops 
 
-
+## Objectifs 
 Mon projet consiste à créer une interface de gestion d’articles relatifs à l’actualité du théâtre dans l’agglomération lyonnaise.  
 Afin de mener à bien ce projet j’ai conçu et créé une base de données et j'ai fait usage de plusieurs requêtes. 
-
-Mon dossier contient deux branches.
-Une branche "main" sur laquelle j'ai choisi d'afficher du contenu via des objets 
-Une branche "request" , le coeur de mon projet sur laquelle je gère plusieurs élements à l'aide de requêtes. 
-
 
 ## Déscription des différentes étapes du projet - usage du CRUD (Create, Read, Update, Delete). 
 ###	SELECT
