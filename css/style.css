@@ -281,6 +281,12 @@ textarea {
   color: black;
 }
 
+/*update*/
+
+.updates-info {
+  background-color: whitesmoke;
+}
+
 /*upload*/
 .upload-title {
 

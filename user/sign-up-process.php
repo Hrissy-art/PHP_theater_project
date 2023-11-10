@@ -18,7 +18,9 @@ try {
 
     // Validation du formulaire
     if (empty($firstname) || empty($lastname) || empty($email) || empty($password) || empty($confirmPassword)) {
-        Utils::redirect('sign-up.php?error=' . AppError::AUTH_REQUIRED_FIELDS);
+        Utils::redirect('sign-up.php?error=' . AppError::AUTH_REQUIRED_FIELDS)
+       ;
+       
     }
 
     if ($password !== $confirmPassword) {
@@ -50,7 +52,9 @@ try {
         'hashedPassword' => $hashedPassword
     ]);
    
-    echo  '<p class= style="background-color: #4CAF50; color: white; padding: 10px; text-align: center;">You have been registrated</p>';
+     echo  'You have been registrated';
+
+    // Utils::redirect('sign-up.php??succes=' . Utils::SUCCES_INSCRIPTION);
 
    
 } catch (PDOException) {

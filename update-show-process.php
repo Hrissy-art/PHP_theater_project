@@ -34,6 +34,6 @@ if (isset($_FILES['new_image']) && $_FILES['new_image']['error'] === UPLOAD_ERR_
 
         Utils::redirect('update.php');
     } else {
-        Utils::redirect('upload-images.php?error=' . AppError::REGISTER_IMG_UPLOAD);
+        Utils::redirect('update.php?error=' . AppError::REGISTER_IMG_UPLOAD);
     }
 }

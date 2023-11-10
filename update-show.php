@@ -17,7 +17,7 @@ if (isset($_GET['id_show'])) {
     ?>
 <!-- Création du formulaire pour la mise à jour des éléments -->
 <h1 class="update-title">Update </h1>
-<form action = "update-show-process.php" method="POST" enctype="multipart/form-data">
+<form class= "updates-info"action = "update-show-process.php" method="POST" enctype="multipart/form-data">
 <div class="form-group">
     <label for="text">Title</label>
     <input type="text" class="form-control" id="title"  name="title" value = "<?php echo $shows['title']; ?>"/>
