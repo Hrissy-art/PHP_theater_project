@@ -1,11 +1,12 @@
 <?php require_once 'layout/header.php';
 require_once 'table-shows.php'; ?>
 
-  
-  <div class="container-fluid main-pic">
-    <img src="img/artists-big.jpg"  class="img-fluid img-principal" alt="theater hall" />
-    <div class="centered"><h1 class="font-sans-serif animate-character font-italic">Welcome</h1></div>
+<div class="container main-pic">
+    <img src="img/ballet_grand.jpg" class="img-fluid img-principal" alt="theater hall" />
+    <div class="centered">
+        <h1 class="font-sans-serif animate-character font-italic index-title">HERE</h1>
     </div>
+</div>
 
   <div class="container " >
     <div class="row"> 

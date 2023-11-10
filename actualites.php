@@ -6,8 +6,6 @@
         <img class="owl-lazy" data-src="img/artists-middle.jpg"  class="img-fluid" alt="artists-playing" >
         <img class="owl-lazy" data-src="img/circus-small.jpg"  class="img-fluid" alt="artists-playing" >
     
-      
-        
         <img class="owl-lazy" data-src="img/artists-middle.jpg"  class="img-fluid" alt="artists-playing" >
         <img class="owl-lazy" data-src="img/circus-small.jpg"  class="img-fluid" alt="artists-playing" >
         <img class="owl-lazy" data-src="img/artists-middle.jpg"  class="img-fluid" alt="artists-playing" >
