@@ -1,6 +1,6 @@
 # PHP_theater_project
 
-Draft **
+Draft ** / Brouillon **
 Ongoing Project: Website on Theatre News in Lyon.
 
 Backend Exercise for Admin-Side Query Implementation
@@ -10,9 +10,13 @@ Backend Exercise for Admin-Side Query Implementation
 - "main"  - display elements by objects loops 
 
 
-
 Mon projet consiste à créer une interface de gestion d’articles relatifs à l’actualité du théâtre dans l’agglomération lyonnaise.  
 Afin de mener à bien ce projet j’ai conçu et créé une base de données et j'ai fait usage de plusieurs requêtes. 
+
+Mon dossier contient deux branches.
+Une branche "main" sur laquelle j'ai choisi d'afficher du contenu via des objets 
+Une branche "request" , le coeur de mon projet sur laquelle je gère plusieurs élements à l'aide de requêtes. 
+
 
 ## Déscription des différentes étapes du projet - usage du CRUD (Create, Read, Update, Delete). 
 ###	SELECT
@@ -68,12 +72,16 @@ Pour s'y faire j’ai créé deux classes dans le dossier classes:
 *ContactData – gère l’insertion des données dans la base de données ```ContactData.php```
 
 ## Usage des classes
-Par manque de temps je n'ai pas réussi à entièrement refactoriser mon code et le tranformer en classes. Toutefois comme évoqué précedemment j'ai créé des classes pour le formulaire de contact. 
+Par manque de temps je n'ai pas réussi à entièrement refactoriser mon code et le tranformer en "classes". Toutefois comme évoqué précedemment j'ai créé des classes pour le formulaire de contact. 
 J'ai également crée deux autres classes. Une classe - ```AppError.php``` qui gère les prinipales erreurs avec leur code respectif. Un autre classe - ```Utils.php``` qui gère la redirection vers une autre page grâce à la fonction: "header"
 
 ## Dossier de configuration 
+Dans le dossier "config", on peu trouver mon fichier ini avec les informations relatives à la connexion à ma base de données.  
 
 ## Analyse des problèmes rencontrés
+J'ai rencontré plusieurs problèmes avant de tout faire fonctionner correctement. 
+J'ai eu quelques difficultés à réussir à récupèrer les informations de plusieurs tables à la fois à travers les clés étrangères. 
+ 
 
 ## Perspectives pour la suite 
 Je n'ai pas eu le temps de factoriser entièrement mon code. 
