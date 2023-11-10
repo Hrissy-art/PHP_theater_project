@@ -12,7 +12,7 @@ class ContactForm {
 
         $db = new ContactData();
         if ($db->insertContact($name, $email, $message)) {
-            echo 'Your message has been sent.';
+            echo '<div class= "try">Your message has been sent.</div>';
         } else {
             echo 'Erreur';
         }

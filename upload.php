@@ -17,12 +17,12 @@ try {
 
 
     if (!is_uploaded_file($image['tmp_name']) || $image['error'] !== UPLOAD_ERR_OK) {
-        Utils::redirect('upload-images.php?error=' . AppError::REGISTER_FILE_UPLOAD);
+        Utils::redirect('upload-images.php?error=' . AppError::REGISTER_IMG_UPLOAD);
     }
 
 
     if (!move_uploaded_file ($image['tmp_name'], __DIR__ . '/img/' . $image['name'])) {
-        Utils::redirect('upload-images.php?error=' . AppError::REGISTER_FILE_UPLOAD);
+        Utils::redirect('upload-images.php?error=' . AppError::REGISTER_IMG_UPLOAD);
     }
 
     $query = "INSERT INTO show_actuality (`id_cathegory`, `title`, `image`, `texte`, `date_actu`, `id_art_director`, `id_admin_author`) 

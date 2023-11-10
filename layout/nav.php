@@ -32,11 +32,7 @@
               </li>
     <?php } ?>
 </ul>
-
-
-
-           
-            <form class="d-flex" method="GET" action="search.php">
+            <form class="d-flex" method="GET" action="/user/search.php">
               <input class="form-control me-2" name= search type="search" placeholder="Search" aria-label="Search" name="q">
               <button class="buton-first" type="submit">Search</button>
             </form>
