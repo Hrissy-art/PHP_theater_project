@@ -149,10 +149,18 @@ Dans le dossier "config", on peu trouver mon fichier ini avec les informations r
 *In the "config" folder, you can find my ini file with information relating to the connection to my database.*
 
 ## Notes
-A plusieurs reprises j'utilise la technique de codage -  "early return pattern" (exemple pendant l'insertion de l'image avec upload dans upload-images.php) Le modèle de retour anticipé (Early Return) est une technique de programmation où une fonction ou une méthode s'arrête dès qu'une condition spécifique est remplie et évalue à vrai
+- A plusieurs reprises j'utilise la technique de codage -  "early return pattern" (exemple pendant l'insertion de l'image avec upload dans upload-images.php) Le modèle de retour anticipé (Early Return) est une technique de programmation où une fonction ou une méthode s'arrête dès qu'une condition spécifique est remplie et évalue à vrai
+- J'ai créé un dossier - "layout" où j'ai mes fichiers footer.php, header.php et nav.php
+- J'ai créé un dossier - "functions" où j'ai ma function principale qui gère la connexion à la base de données. 
+- le dossier "CSS" gère les styles appliquées 
+- Le dossier "js" gère les paramètrages bootsrap  
 
 ## Notes
-*À plusieurs reprises, j'utilise la technique de codage - "early return pattern" (par exemple lors de l'insertion de l'image avec l'upload dans upload-images.php). Le modèle de retour anticipé (Early Return) est une technique de programmation où une fonction ou une méthode s'arrête dès qu'une condition spécifique est remplie et évalue à vrai.*
+*Multiple times, I use the coding technique - "early return pattern" (for example, during the image insertion with upload in upload-images.php). The Early Return pattern is a programming technique where a function or method stops as soon as a specific condition is met and evaluates to true.
+I've created a folder called "layout" where I have my files footer.php, header.php, and nav.php.
+I've created a folder called "functions" where I have my main function that handles the database connection.
+The "CSS" folder manages the applied styles.
+The "js" folder handles Bootstrap settings.*
 
 ## Analyse des problèmes rencontrés
 J'ai rencontré plusieurs problèmes avant de tout faire fonctionner correctement. 
