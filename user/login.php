@@ -1,5 +1,5 @@
 
-<?php 
+<?php
 require_once __DIR__ . "/../layout/header.php";
 
 ?>
@@ -10,7 +10,7 @@ require_once __DIR__ . "/../layout/header.php";
                 <div class="col-lg-4 mt-5">
                     <div class="text-center">
                         <!-- Vérification si la session de l'utilisateur est ouverte -->
-                       
+
                         <?php if (isset($_SESSION['loginErrorMessage'])) { ?>
                             <div class="alert alert-danger">
                                 <?php echo $_SESSION['loginErrorMessage']; ?>

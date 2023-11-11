@@ -5,8 +5,11 @@ require_once __DIR__ . '/classes/AppError.php';
 require_once __DIR__ . '/classes/Utils.php';
 require_once __DIR__ . '/functions/db.php'; 
 
+
+try {
 $pdo = getConnection();
 
+// Je vérifie si le paramètre id_show est présent dans l'URL 
 if (isset($_GET['id_show'])) {
     $id_show = $_GET['id_show'];
 
@@ -46,10 +49,9 @@ if (isset($_GET['id_show'])) {
   <button type="submit" class="btn btn-dark">Modify</button>
 </form>
 <?php
+}} catch (PDOException $e) {
+  Utils::redirect('update-show.php?error=' . AppError::DB_CONNECTION);
 }
-else {
-  echo 'Show not found.';
-} 
 
 require_once __DIR__ . '/layout/footer.php';
 ?>

@@ -46,13 +46,13 @@ Thanks to a join (a second SELECT query) I retrieve information concerning the s
 
 ### INSERT
 En tant qu’administrateur j’ai la possibilité d’ajouter du nouveau contenu à ma table « show_actuality »  une image, un titre, une description. 
-En utilisant la requête INSERT dans le formulaire créé sur le fichier upload-images.php  
+En utilisant la requête INSERT dans le formulaire créé dans le fichier ```upload-images.php```  
 
 J’ai toutes les requêtes qui gèrenet l'insertion dans le fichier ```upload.php```
 
 ### INSERT
 *As an administrator I can add new content to my “show_actuality” table: an image, a title, a description.
-Using the INSERT query in the form created on the upload-images.php file
+Using the INSERT query in the form created in the ```upload-images.php``` file
 
 I have all the requests that manage the insertion into the file ``upload.php```*
 
@@ -122,13 +122,14 @@ L'utilisateur a la possibilité d'effectuer une recherche à l'aide du moteur de
 *The user has the possibility to carry out a search using the search engine in ```nav.php```*
 
 #### Le contact 
-L'utilisateur a la possibilité d'envoyer un message via un formulaire aux gestionnaires du site. 
+L'utilisateur a la possibilité d'envoyer un message via un formulaire aux gestionnaires du site. Le formulaire est créé dans ```contact.php```
 Pour s'y faire j’ai créé deux classes dans le dossier classes:
 ContactForm - gère la méthode ReQUEST ```ContactForm.php```
 ContactData – gère l’insertion des données dans la base de données ```ContactData.php```
 
 #### The contact
-*The user has the possibility to send a message via a form to the site managers. 
+*The user has the possibility to send a message via a form to the site managers.
+The form is created in ```contact.php```
 To do this I created two classes in the classes folder:
 ContactForm - handles the ReQUEST method ```ContactForm.php```
 ContactData – manages the insertion of data into the ``ContactData.php``` database*
@@ -146,6 +147,12 @@ Dans le dossier "config", on peu trouver mon fichier ini avec les informations r
 
 ## Configuration folder
 *In the "config" folder, you can find my ini file with information relating to the connection to my database.*
+
+## Notes
+A plusieurs reprises j'utilise la technique de codage -  "early return pattern" (exemple pendant l'insertion de l'image avec upload dans upload-images.php) Le modèle de retour anticipé (Early Return) est une technique de programmation où une fonction ou une méthode s'arrête dès qu'une condition spécifique est remplie et évalue à vrai
+
+## Notes
+*À plusieurs reprises, j'utilise la technique de codage - "early return pattern" (par exemple lors de l'insertion de l'image avec l'upload dans upload-images.php). Le modèle de retour anticipé (Early Return) est une technique de programmation où une fonction ou une méthode s'arrête dès qu'une condition spécifique est remplie et évalue à vrai.*
 
 ## Analyse des problèmes rencontrés
 J'ai rencontré plusieurs problèmes avant de tout faire fonctionner correctement. 

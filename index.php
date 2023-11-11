@@ -27,9 +27,11 @@ require_once 'layout/header.php';
 </div>
 </div>
 
+<!-- J'affiche les trois premiers éléments de ma table "show_actuality" -->
 <div class="container">
     <div class="row m-5">
     <?php
+    try {
         $pdo = getConnection();
         $stmt = $pdo->query("SELECT * FROM show_actuality LIMIT 3");
 
@@ -55,6 +57,8 @@ require_once 'layout/header.php';
         ?>
     </div>
 </div>
-<?php
+<?php } catch (PDOException $e) {
+    Utils::redirect('index.php?error=' . AppError::DB_CONNECTION);
+}
 
 require_once 'layout/footer.php';

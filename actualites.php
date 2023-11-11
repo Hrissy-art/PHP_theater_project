@@ -11,6 +11,8 @@ require_once __DIR__ . '/functions/db.php';
   <div class="col-md-12 p-3 m-2 ">
   <div class="owl-carousel owl-theme">
     <?php
+
+try {
     $pdo = getConnection(); 
 
     $stmt = $pdo->query("SELECT * FROM show_actuality");
@@ -22,31 +24,18 @@ require_once __DIR__ . '/functions/db.php';
 
     while ($row = $stmt->fetch()) {
     ?>
-<!-- création d'un caroussel à l'aide de javascript  -->
+<!-- création d'un caroussel à l'aide de javascript afin d'afficher tous les éléments de ma table. On a la possibilité de cliquer sur chaque image afin d'accéder à l'integralité de son -->
 <a href="image_details.php?id_show=<?php echo $row['id_show']; ?>">
             <img class="owl-lazy img-fluid" data-src="img/<?php echo $row['image']; ?>" alt="artists-playing">
             <p class="card-text actuality-par"><?php echo $row['title']; ?></p>
         </a>
-       
+
     <?php
-    }
+    } } catch (PDOException $e) {
+      Utils::redirect('actualites.php?error=' . AppError::DB_CONNECTION);
+  }
     ?>
 </div>
-      <!-- <div class="owl-carousel owl-theme">
-      
-        <img class="owl-lazy" data-src="img/artists-middle.jpg"  class="img-fluid" alt="artists-playing" >
-        <img class="owl-lazy" data-src="img/circus-small.jpg"  class="img-fluid" alt="artists-playing" >
-    
-      
-        
-        <img class="owl-lazy" data-src="img/artists-middle.jpg"  class="img-fluid" alt="artists-playing" >
-        <img class="owl-lazy" data-src="img/circus-small.jpg"  class="img-fluid" alt="artists-playing" >
-        <img class="owl-lazy" data-src="img/artists-middle.jpg"  class="img-fluid" alt="artists-playing" >
-        <img class="owl-lazy" data-src="img/artists-middle.jpg"  class="img-fluid" alt="artists-playing" >
-        <img class="owl-lazy" data-src="img/artists-middle.jpg"  class="img-fluid" alt="artists-playing" >
-        <img class="owl-lazy" data-src="img/artists-middle.jpg"  class="img-fluid" alt="artists-playing" >
-        <img class="owl-lazy" data-src="img/artists-middle.jpg"  class="img-fluid" alt="artists-playing" >
-    </div> -->
     </div>
     </div>
     </section>

@@ -2,6 +2,7 @@
 require_once 'functions/db.php';
 require_once 'layout/header.php';
 
+// je vérifie si le paramètre l'Id existe dans l'URL à l'aide $_GET je le récupère de la page précédente 
 if (isset($_GET['id_show'])) {
     $imageId = $_GET['id_show'];
 
@@ -17,11 +18,11 @@ if (isset($_GET['id_show'])) {
         <div class=" img-disposal ">
 
    <?php if ($imageDetails) {
-        // Affichage de l'image en taille réelle
-        echo '<div class="col-md-9 col-sm-6">';
-        echo '<img src="img/' . $imageDetails['image'] . '" alt="Image en taille réelle" class="img-fluid">';
-        echo '</div>';
-?>
+       // Affichage de l'image en taille réelle
+       echo '<div class="col-md-9 col-sm-6">';
+       echo '<img src="img/' . $imageDetails['image'] . '" alt="Image en taille réelle" class="img-fluid">';
+       echo '</div>';
+       ?>
         </div>
    </div>
 
@@ -29,28 +30,28 @@ if (isset($_GET['id_show'])) {
  <div class="col-lg-4 ">
  <div class=" details-show ">
     <?php
-        // Affichage des détails de l'image
-        echo '<div class="col-md-6 p-4 col-sm-6">';
-        echo '<h3>' . $imageDetails['title'] . '</h3>';
-        echo '<p>Date : ' . $imageDetails['date_actu'] . '</p>';
-        echo '<p class="details-par"> A propos:'. " " . $imageDetails['texte'] . '</p>';
+               // Affichage des détails de l'image
+               echo '<div class="col-md-6 p-4 col-sm-6">';
+       echo '<h3>' . $imageDetails['title'] . '</h3>';
+       echo '<p>Date : ' . $imageDetails['date_actu'] . '</p>';
+       echo '<p class="details-par"> A propos:'. " " . $imageDetails['texte'] . '</p>';
 
-        // Ici j'effectue une requête pour récupérer le nom du théâtre lié au spectacle
-        $stmtTheater = $pdo->prepare("SELECT t.name
+       // Ici j'effectue une requête pour récupérer le nom du théâtre lié au spectacle
+       $stmtTheater = $pdo->prepare("SELECT t.name
                                       FROM show_actuality sa
                                       INNER JOIN show_actuality_theater sat ON sa.id_show = sat.id_show
                                       INNER JOIN theater t ON sat.id_theater = t.id_theater
                                       WHERE sa.id_show = :id_show");
-        $stmtTheater->execute(['id_show' => $imageId]);
-        $theaterDetails = $stmtTheater->fetch();
+       $stmtTheater->execute(['id_show' => $imageId]);
+       $theaterDetails = $stmtTheater->fetch();
 
-        if ($theaterDetails) {
-            echo 'Lieu:'." ". $theaterDetails['name'];
-        } else {
-            echo 'Théâtre non trouvé.';
-        }
-        echo '</div>';
-    }
+       if ($theaterDetails) {
+           echo 'Lieu:'." ". $theaterDetails['name'];
+       } else {
+           echo 'Théâtre non trouvé.';
+       }
+       echo '</div>';
+   }
 } ?>
 </div>
 </div>

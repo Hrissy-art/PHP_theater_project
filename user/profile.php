@@ -8,9 +8,8 @@ if (!isset($_SESSION['userInfos'])) {
     Utils::redirect('login.php');
 }
 
- $_SESSION['userInfos'] 
+$_SESSION['userInfos']
 ?>
- 
 
 <div class="container">
     <div class="row">

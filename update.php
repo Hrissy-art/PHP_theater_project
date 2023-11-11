@@ -7,7 +7,7 @@ require_once __DIR__ . '/functions/db.php';
 
 // Je récupère le contenu de ma table à l'aide d'un SELECT //
 
-
+try {
     $pdo = getConnection();
 
     $stmt = $pdo->query("SELECT id_show, title, image, texte, date_actu FROM show_actuality");
@@ -27,6 +27,8 @@ while ($shows = $stmt->fetch()) {
     <div class="col-md-2 col-sm-6">
 </div>
     <?php
+} } catch (PDOException $e) {
+    Utils::redirect('update.php?error=' . AppError::DB_CONNECTION);
 }
 ?>
 
