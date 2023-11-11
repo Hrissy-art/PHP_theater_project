@@ -13,16 +13,17 @@ Backend Exercise for Admin-Side Query Implementation
 ## Déscription
 
 Mon dossier contient deux branches.
-Une branche **main** sur laquelle j'ai choisi d'afficher du contenu via des objets afin de m'entrainer à la programmation orientée objet. J'ai égalament las possibilité d'effectuer une recherche par mot clé à l'aide d'un moteur de recherche.
+Une branche **main** sur laquelle j'ai choisi d'afficher le contenu de mes actualités théâtrales via "des objets" afin de m'entrainer à la programmation orientée objet. J'ai crée une classe `Show.php` que j'instancie dans `table-shows.php` et j'affiche dans `show.php`. J'ai égalament la possibilité d'effectuer une recherche par mot clé à l'aide d'un moteur de recherche.
+
 Une branche **request** qui constitue le coeur de mon projet et sur laquelle je gère plusieurs de l'interface administrateur et utilisateur à l'aide de requêtes. La partie FRONT de cette branche est plus avancée et élaborée.
 
 ## Description
 
 \*My folder contains two branches:
 
-A main branch where I chose to display content using objects to practice object-oriented programming. I also implemented the ability to perform keyword searches using a search engine.
+A **main** branch where I chose to display the content of my theatrical news using "objects" to practice object-oriented programming. I created a class Show.php that I instantiate in table-shows.php, and I display it in show.php. I also have the ability to perform a keyword search using a search engine
 
-A request branch that forms the core of my project. On this branch, I handle various aspects of the administrator and user interfaces using requests. The FRONT part of this branch is more advanced and elaborated.\*
+A **request** branch that forms the core of my project. On this branch, I handle various aspects of the administrator and user interfaces using requests. The FRONT part of this branch is more advanced and elaborated.\*
 
 ## Objectifs
 
