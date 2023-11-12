@@ -15,7 +15,7 @@ Backend Exercise for Admin-Side Query Implementation
 Mon dossier contient deux branches.
 Une branche **main** sur laquelle j'ai choisi d'afficher le contenu de mes actualités théâtrales via "des objets" afin de m'entrainer à la programmation orientée objet. J'ai crée une classe `Show.php` que j'instancie dans `table-shows.php` et j'affiche dans `show.php`. J'ai égalament la possibilité d'effectuer une recherche par mot clé à l'aide d'un moteur de recherche.
 
-Une branche **request** qui constitue le coeur de mon projet et sur laquelle je gère plusieurs de l'interface administrateur et utilisateur à l'aide de requêtes. La partie FRONT de cette branche est plus avancée et élaborée.
+Une branche **request** qui constitue le coeur de mon projet et sur laquelle je gère plusieurs éléments de l'interface administrateur et utilisateur à l'aide de requêtes. La partie FRONT de cette branche est plus avancée et élaborée.
 
 ## Description
 
@@ -43,7 +43,7 @@ In order to carry out this project I designed and created a database and I used 
 
 J’ai commencé mon projet par une requête d’affichage du contenu de ma table principale « show_actuality » la table contient une quinzaine d’images de spectacles avec leur titre, description, date respective.
 A l’aide d’un SELECT j’affiche les trois premiers éléments de ma table sur la page : index.php
-Ensuite pour plus de fluidité et à l'aide d'une librairie javascript j'ai créé un carrousel où je récupère tout le contenu de ma table show_actuality sur la page actualities.php  
+Ensuite pour plus de fluidité et à l'aide d'une librairie javascript j'ai créé "un carrousel" où je récupère tout le contenu de ma table show_actuality sur la page actualities.php  
 En outre, j’ai la possibilité de cliquer sur chaque spectacle et afficher son image intégrale avec les informations relatives. Je peux visionner ces éléments en étant redirigée vers la page image-details.php
 
 Grâce à une jointure (une deuxième requête SELECT) je récupère les informations concernant le spectacle et le lieu où il se déroule. Les deux tables sont liées par une troisième table.Je récupère tous ces éléments à la fois dans les détails de chaque spectacle.
@@ -98,7 +98,7 @@ the interface._
 
 #### La création d’un compte de l’utilisateur
 
-L'utilisateur à la possibilité de créér un compte. Les données sont récupèrées dans un table prévue à cet effet. Le mot de passe généré est hashé. Le formulaire d'inscription s etrouve dans
+L'utilisateur à la possibilité de créér un compte. Les données sont récupèrées dans un table prévue à cet effet. Le mot de passe généré est hashé. Le formulaire d'inscription se trouve dans
 `sign-up.php`
 Le fichier `sign-up-process.php` gère la requête permettant la création du compte.
 Dans un premier temps je récupère les données du formulaire, ensuite je procède à une insertion dans la table.
@@ -115,7 +115,7 @@ First I retrieve the data from the form, then I insert it into the table._
 L'utilisateur peut se connecter à son compte utilisateur.
 Pour cela j'initie un début de session - session_start() dans le fichier `header.php` qui est requis par le fichier login.php,
 
-Dans le fichier login-process.php, je vérifie dans un premier temps si l'email et le mot de passe de l'utilisateur existent et ensuite à l'aide d'un SELECT je récupère l'email de la base de donnée.
+Dans le fichier `login-process.php`, je vérifie dans un premier temps si l'email et le mot de passe de l'utilisateur existent et ensuite à l'aide d'un SELECT je récupère l'email de la base de donnée.
 Une fonction de vérification permet de déterminer si le mot de passe hashé est identique au mot de passe choisi par l'utilisateur
 
 Dans `nav.php` - je crée des condition d'affichage du navbar en focntion de la connexion de l'utilisateur ou pas. Si l'utilisateur est connecté à sa session il a la possibilité de se déconnecter ultérieurement grâce au boutton logout (géré dans le fichier `logout.php`) qui s'affiche à la place du boutton login.  
@@ -184,7 +184,7 @@ _In the "config" folder, you can find my ini file with information relating to t
 ## Notes
 
 - A plusieurs reprises j'utilise la technique de codage - "early return pattern" (exemple pendant l'insertion de l'image avec upload dans upload-images.php) Le modèle de retour anticipé (Early Return) est une technique de programmation où une fonction ou une méthode s'arrête dès qu'une condition spécifique est remplie et évalue à vrai
-- J'ai créé un dossier - "layout" où j'ai mes fichiers footer.php, header.php et nav.php
+- Pour plus de fluidoité J'ai créé un dossier - "layout" où j'ai mes fichiers `footer.php`, `header.php` et `nav.php`
 - J'ai créé un dossier - "functions" où j'ai ma function principale qui gère la connexion à la base de données.
 - le dossier "CSS" gère les styles appliquées
 - Le dossier "js" gère les paramètrages bootsrap
